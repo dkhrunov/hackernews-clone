@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
 
-const DEFAULT_QUERY = 'redux';
+// const DEFAULT_QUERY = 'redux';
 
 const PATH_BASE = 'https://hn.algolia.com/api/v1';
 const PATH_SEARCH = '/search';
 const PARAM_SEARCH = 'query=';
 
-const isSearched = searchTerm => item =>
-	item.title.toLowerCase().includes(searchTerm.toLowerCase());
+// const isSearched = searchTerm => item =>
+// 	item.title.toLowerCase().includes(searchTerm.toLowerCase());
 
 const isNotNullTitle = item => item.title !== null;
 
