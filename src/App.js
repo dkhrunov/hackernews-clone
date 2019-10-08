@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { sortBy } from 'lodash';
+import { DualRing } from 'react-spinners-css';
 import './App.css';
 
 const PATH_BASE = 'https://hn.algolia.com/api/v1';
@@ -147,13 +148,10 @@ const Button = ({	onClick,	className = '', children, }) =>
    	{children}
   	</button>
 
-const Loading = () => 
-	<div>Loading...</div>
-
 // HOC
 const withLoading = (Component) => ({ isLoading, ...other }) =>
 	isLoading
-		? <Loading/>
+		? <DualRing color="#202020"/>
 		: <Component { ...other }/>
 	
 const ButtonWithLoading = withLoading(Button);
