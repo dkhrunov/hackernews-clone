@@ -3,7 +3,8 @@
 }
 
 .interactions {
-	text-align: center;
+	display: flex;
+	justify-content: center;
 }
 
 .interactions .fa-search {
@@ -64,22 +65,4 @@ border-width: 0;
 .button-active {
 	border-radius: 0;
 	border-bottom: 1px solid #38BB6C;
-}
-
-.pageControls {
-	display: flex;
-   justify-content: center;
-}
-
-.btn-page-cntrl {
-	margin: 0 10px 0 10px;
-}
-
-.num-page {
-	display: flex;
-	align-items: center;
-	margin: 0 3px 0 3px; 
-}
-.active-page {
-	font-weight: bolder;
 }
